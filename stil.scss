@@ -1,0 +1,92 @@
+//overordnet
+html {
+  font-size: 62.5%; //1rem=10px
+  max-width: 100%;
+  img{
+    width: 80%;
+  }
+}
+//overordnet slut
+//header
+header img{
+  width: 100%;
+}
+h1{
+  color: #bc1825;
+  text-align: center;
+  font-size: 2.5rem;
+}
+//header slut
+//indhold
+.img1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+h2 {
+  background-color: #bc1825;
+  color: #f2f2f2;
+  font-family: Bahnschrift, SansSerif;
+}
+h3 {
+  color: #bc1825;
+}
+p {
+  width: 80%;
+}
+//indhold slut
+//grid
+@supports (grid-area: auto) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "h h h h h h"
+            "nav nav nav nav nav nav"
+            ". v1 v1 v1 v1 ."
+            "o1 o1 o1 o1 o1 o1"
+            ". e_t e_t e_t e_t ."
+            ". i1 i1 i1 i1 ."
+            "o2 o2 o2 o2 o2 o2"
+            ". i2 i2 i2 i2 ."
+            ". o_t o_t o_t o_t ."
+            ". v2 v2 v2 v2 ."
+            "o3 o3 o3 o3 o3 o3";
+  }
+//grid slut
+//grid navne
+  header {
+    grid-area: h;
+  }
+  nav {
+    grid-area: nav;
+  }
+  #v1 {
+    grid-area: v1;
+  }
+  #o1 {
+    grid-area: o1;
+  }
+  #e_t {
+    grid-area: e_t;
+  }
+  #i1 {
+    grid-area: i1;
+  }
+  #o2 {
+    grid-area: o2;
+  }
+  #i2 {
+    grid-area: i2;
+  }
+  #o_t {
+    grid-area: o_t;
+  }
+  #v2 {
+    grid-area: v2;
+  }
+  #o3 {
+    grid-area: o3;
+  }
+  //gridnavne slut
+}
